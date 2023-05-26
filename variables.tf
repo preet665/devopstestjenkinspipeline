@@ -8,7 +8,7 @@ variable "secret_key" {
 
 variable "instance_name" {
         description = "Name of the instance to be created"
-        default = "testts"
+        default = "test56ts"
 }
 
 variable "instance_type" {
