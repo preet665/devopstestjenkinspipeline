@@ -10,4 +10,11 @@ resource "aws_instance" "ec2_instance" {
     subnet_id = "${var.subnet_id}"
     instance_type = "${var.instance_type}"
     key_name = "${var.ami_key_pair_name}"
+    
+    user_data = <<-EOF
+    #!/bin/bash
+    apt-get update
+    apt-get install -y docker.io
+    docker pull <docker_image_name>
+    EOF
 }
