@@ -17,12 +17,12 @@ variable "instance_type" {
 
 variable "subnet_id" {
         description = "The VPC subnet the instance(s) will be created in"
-        default = "subnet-0a7968d73b16e318c"
+        default = "subnet-08c08bb70858b01e2"
 }
 
 variable "ami_id" {
         description = "The AMI to use"
-        default = "ami-0aa2b7722dc1b5612"
+        default = "ami-0261755bbcb8c4a84"
 }
 
 variable "number_of_instances" {
